@@ -28,3 +28,8 @@ align-items: center;
     margin: 10px;
     font-size: 20px;
   }
+
+ #seleccionado > img {
+  width: 20px;
+ }
+

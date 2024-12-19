@@ -23,7 +23,7 @@ const data = {
     casual:
       "https://static.bershka.net/assets/public/4da8/9df5/773740ebb66c/ffa84fc406ad/helenamarria_becf41dd003de2f3db52/helenamarria_becf41dd003de2f3db52.jpg?ts=1729092003928&t=20241025021704&w=750",
     backtocity:
-      "https://static.bershka.net/assets/public/35de/769f/6d214e19ad15/1169b0cec4f1/ileniazanetti_ebbddc0ea0b723e957d21/ileniazanetti_ebbddc0ea0b723e957d21.jpg?ts=1729092004297&t=20241025021704&w=750",
+      "https://static.bershka.net/assets/public/35de/769f/6d214e19ad15/1169b0cec4f1/ileniazanetti_ebbddc0ea0b723e957d21/ileniazan etti_ebbddc0ea0b723e957d21.jpg?ts=1729092004297&t=20241025021704&w=750",
     leather:
       "https://static.bershka.net/assets/public/16a9/793f/5e964606b009/e256161b531a/blancaojeda__be35ed197bfbca2a4eae/blancaojeda__be35ed197bfbca2a4eae.jpg?ts=1729092005264&t=20241025021704&w=750",
   },

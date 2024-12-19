@@ -1,3 +1,5 @@
+
+
 import { Pants } from "../Pants/Pants";
 import { cleanPage } from "../../utils/cleanPage";
 import dataPants from "../../data/data";
@@ -24,13 +26,14 @@ export const Pantalones = () => {
         const selectedPant = pantalones[productId];
 
         // Crear el HTML del producto seleccionado
-        const selectedProductHTML = `
+        const selectedProductHTML = `<section id="seleccionado">
           <li id="product-${productId}">
             <img src="${selectedPant.img}" alt="${selectedPant.name}" />
             <p>${selectedPant.name}</p>
             <p>${selectedPant.price}</p>
             <button class="btnEliminar" onclick="eliminarProducto('${productId}')">Eliminar</button>
           </li>
+          </section>
         `;
 
         // Añadir el producto al carrito

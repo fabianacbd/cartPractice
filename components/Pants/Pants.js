@@ -9,7 +9,7 @@ export const Pants = () => {
     .map(
       (key) => `
       <li>
-        <img src="${pants[key].img}" alt="${pants[key].name}" />
+        <img src="${pants[key].img}" alt="${pants[key].name}"/>
         <p>${pants[key].name}</p>
         <p>${pants[key].price}</p>
         <button id="botoncomprar-${key}" class="botoncomprar">Comprar</button>
