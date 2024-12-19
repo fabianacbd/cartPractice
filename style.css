@@ -5,6 +5,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+li {
+  list-style-type: none;
+}
 body {
   padding: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -17,8 +20,6 @@ body.dark {
   background-color: black;
   color: whitesmoke;
 }
-
-
 
 /* Por defecto la lista está en flex (ESTAMOS MAQUEANDO MOBILE FIRST)*/
 nav ul {
@@ -41,7 +42,6 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   list-style: none;
-  
 }
 
 /* Ocultamos el input para que no se vea nunca, ya que se va a lanzar mediante el label */
@@ -55,7 +55,6 @@ a {
   display: none;
   cursor: pointer;
   background-color: transparent;
-  
 }
 
 /*Ahora maquetamos la versión desktop*/
@@ -63,7 +62,10 @@ a {
   label {
     display: none;
     cursor: pointer;
-    
+  }
+
+  .ul_nav {
+    display: none;
   }
 
   #sandwich:not(:checked) + ul,
@@ -79,13 +81,19 @@ a {
   }
 }
 
-
 footer {
   text-align: center;
 }
 
-
-
 li {
   cursor: pointer;
+}
+
+.cartMessage-hidden {
+  display: none;
+}
+
+#cartDropdown {
+  width: auto;
+  height: auto;
 }

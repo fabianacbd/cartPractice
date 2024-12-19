@@ -1,11 +1,11 @@
 import "./Navbar.css";
 
-const template =  () => 
-     `<h1>BIANCA</h1>
+const template = () =>
+  `<h1>BIANCA</h1>
       <nav>
       <label for="sandwich">☰</label>
       <input id="sandwich" type="checkbox"/>
-      <ul>
+      <ul class="ul_nav">
         <li>
           <a href="#" id="homelink">Home</a>
         </li>
@@ -21,13 +21,20 @@ const template =  () =>
         <li>
           <a href="#" id="shoes">Shoes</a>
         </li>
-         <div class="cart-container" id="cartComponent">
     </div>
       </ul>
+      <span class="cart-icon" id="cartToggle">🛒 COMPRAR</span>
+      <div class="cart-dropdown" id="cartDropdown">
+        <p id="cartMessage">El carrito está vacío.</p>
+      </div>
     </nav>`;
 
-    const Navbar = () => {
-        document.querySelector("header").innerHTML = template();
-      };
+const Navbar = () => {
+  document.querySelector("header").innerHTML = template();
+  document.getElementById("cartToggle").addEventListener("click", () => {
+    const dropdown = document.getElementById("cartDropdown");
+    dropdown.classList.toggle("active");
+  });
+};
 
-  export default Navbar;
+export default Navbar;
